@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png"
+        href="V-photoaidcom-invert-removebg-preview(1).png">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+        <!-- Carrusel de fondo -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="slide" style="background-image: url('20240103_212731 (1).gif');"></div>
+                <div class="slide" style="background-image: url('IMG-20230526-WA0029.jpg');"></div>
+                <div class="slide" style="background-image: url('IMG-20221001-WA0022.jpg');"></div>
+                <div class="slide" style="background-image: url('IMG-20230505-WA0012.jpg');"></div>
+            </div>
+            
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <!-- Barra de Navegación -->
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Por_siempre-removebg-preview.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <ul>
+                
+                <li><button class="btn" onclick="window.location.href='index.html'">Home</button></li>
+                <li><button class="btn" onclick="window.location.href='fotos.html'">Fotos</button></li>
+                <li><button class="btn" onclick="window.location.href='mensajes.html'">Mensajes</button></li>
+            </ul>
+        </nav>
+        <h1 class="archivo-black-regular">NOS VEMOS EN:
+        </h1>
+        <!-- Contador de cuenta regresiva -->
+        <div id="contador" class="contador">
+            <div class="tiempo">
+                <span id="dias" class="numero">00</span>
+                <span class="etiqueta">Días</span>
+            </div>
+            <div class="tiempo">
+                <span id="horas" class="numero">00</span>
+                <span class="etiqueta">Horas</span>
+            </div>
+            <div class="tiempo">
+                <span id="minutos" class="numero">00</span>
+                <span class="etiqueta">Minutos</span>
+            </div>
+            <div class="tiempo">
+                <span id="segundos" class="numero">00</span>
+                <span class="etiqueta">Segundos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <section id="home">
+
+        <div id="welcomeBack" style="display: none;">
+            Ya estás de regreso!
+        </div>
+
+        <div class="modern-card">
+            <h2 class="card-title"></h2>
+            <p class="card-content">   Hola linda, ya es medio tarde, pero como bien digo “mejor tarde que nunca”, la idea era que todo esto estuviese listo para mucho antes, pero no llegue con los tiempos, pero te prometo que cada pizca de este regalo lo hice con amor.
+            <p class="card-content">   La verdad que desde que te fuiste no paro de pensar en todo lo que te extraño, es raro no estar organizando chinos para caerte y ver la sonrisa que tenes siempre que estamos juntos, y más aún el no poder molestarte y darte besos a más no poder. Pero aunque sea difícil y que me cueste sé que este viaje es por tu bien, es un paso importante para tu futuro profesional, y sobre todo personal. Y la verdad que me llena de orgullo todo lo que estás logrando.
+            <p class="card-content">   Quiero que sepas que te deseo la mejor de las suertes en estas rotaciones. Sos increíblemente capaz, y sé que vas a brillar en cada cosa en la que participes y lo des todo. En este momento es importante que por una vez dejes de preocuparte por todos, y dejes que todos nos preocupemos por vos, y te concentres en lo que fuiste a hacer y aprendas mucho. Este viaje vale la pena, así que aunque cueste, no dejes que la tristeza te gane.
+            <p class="card-content">   No olvides que podes contar conmigo para lo que sea, quiero ser para vos una herramienta de soporte, en la cual puedas confiar para cualquier cosa que necesites. Estoy acá para vos, y siempre lo voy a estar, después de todo, siempre vuelvo. 
+            <p class="card-content">   Aunque sabe que te voy a seguir molestando con mis llamadas diarias, es lo más cercano a un abrazo con vos de esos que me gustan, así que en eso si que voy a ser un poco egoísta. 
+            <p class="card-content">   Sabe que estoy contando los días hasta que vuelvas. Te espero con los brazos abiertos, lleno de ganas por tenerte a mi lado de nuevo. Este tiempo lejos no es más que una pequeña prueba que, estoy seguro, solo fortalecerá lo que siento por vos.
+                
+            </p>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Galería de Fotos y Videos -->
+        <div class="section-centrada">
+            <h1 class="custom-title">Que mejor que vivir   <br> cantando...</h1>
+            <br>
+            <br>
+            <div id="galeria">
+                <img src="Imagenes\Imagen de WhatsApp 2024-09-08 a las 16.55.32_71a055d0.jpg" alt="Foto de recuerdo" class="responsive-image" >
+                <br>
+                <br><img src="Imagenes\Imagen de WhatsApp 2024-09-08 a las 16.55.32_d94d8bd4.jpg" alt="Foto de recuerdo" class="responsive-image" >
+                <br>
+                <br><img src="Imagenes\Imagen de WhatsApp 2024-09-08 a las 16.55.33_6be36553.jpg" alt="Foto de recuerdo" class="responsive-image" >    
+            </div>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
